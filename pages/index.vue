@@ -2,12 +2,10 @@
 
 </script>
 
-<template>
-    <div>
-        home page 
-    </div>
+<template lang="pug">
+Header
 </template>
 
-<style module>
+<style scoped lang="scss">
 
 </style>
