@@ -11,8 +11,12 @@
   },
   "devDependencies": {
     "@nuxt/devtools": "latest",
+    "@vue/language-plugin-pug": "^1.8.22",
     "nuxt": "^3.8.1",
     "vue": "^3.3.8",
     "vue-router": "^4.2.5"
+  },
+  "dependencies": {
+    "pug": "^3.0.2"
   }
 }
