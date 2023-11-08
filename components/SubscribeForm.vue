@@ -1,7 +1,7 @@
 <template lang="pug">
 form(class='subscribe-form')
     h3(class='subscribe-form__header') Подпишись на рассылку
-    input(type='email' placeholder='Email' class='input')
+    input(type='email' placeholder='Email' class='input' name='email' autocomplete='email')
     button(type='submit' class='button button--primary') Подписаться
 </template>
 
