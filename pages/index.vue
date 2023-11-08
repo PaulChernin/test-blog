@@ -3,8 +3,7 @@
 </script>
 
 <template lang="pug">
-Header
-Footer
+p index
 </template>
 
 <style scoped lang="scss">

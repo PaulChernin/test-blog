@@ -1,7 +1,7 @@
-<template>
-  <div>
-    <router-view/>
-  </div>
+<template lang="pug">
+Header
+NuxtPage
+Footer
 </template>
 
 <style lang="scss">
