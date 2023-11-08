@@ -1,25 +1,24 @@
 <script setup>
-const props = defineProps(['title', 'image', 'reading_time', 'views_count', 'short_description']);
+const { data } = defineProps(['data']);
 </script>
 
 <template lang="pug">
 section(class='article-intro')
-    img(:src='props.image' class='article-intro__image')
+    img(:src='data.image' class='article-intro__image')
     div(class='article-intro__container')
-        h1(class='article-intro__header') {{ props.title }}
+        h1(class='article-intro__header') {{ data.title }}
         div(class='article-intro__stats')
             div(class='article-intro__stats-item')
                 img(src='/icons/time.svg')
-                div {{ props.reading_time }} мин время чтения
+                div {{ data.reading_time }} мин время чтения
             div(class='article-intro__stats-item')
                 img(src='/icons/eye.svg')
-                div {{ props.views_count }} прочитали статью
-        p {{ props.short_description }}
+                div {{ data.views_count }} прочитали статью
+        p {{ data.short_description }}
 </template>
 
 <style lang="scss">
 .article-intro {
-    height: 580;
     display: flex;
     flex-direction: row;
     gap: 30px;

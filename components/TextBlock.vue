@@ -1,5 +1,5 @@
 <script setup>
-const props = defineProps(['id', 'data']);
+const props = defineProps(['data']);
 </script>
 
 <template lang="pug">

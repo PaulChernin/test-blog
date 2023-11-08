@@ -11,6 +11,7 @@ form(class='subscribe-form')
     display: flex;
     flex-direction: row;
     align-items: center;
+    padding: 30px 27px;
     background-color: var(--color-dark);
     color: var(--color-white);
     gap: 37px;
