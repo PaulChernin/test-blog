@@ -6,7 +6,8 @@ header(class='header')
 <style scoped land="scss">
 .header {
     height: 85px;
-    display: flex;
     padding: 28px 0 25px;
+    display: flex;
+    justify-content: center;
 }
 </style>
