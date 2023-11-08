@@ -4,7 +4,7 @@
 
 <template lang="pug">
 Header
-SubscribeForm
+Footer
 </template>
 
 <style scoped lang="scss">

@@ -1,12 +1,12 @@
 <template lang="pug">
-form(class='form')
-    h3(class='form_header') Подпишись на рассылку
+form(class='subscribe-form')
+    h3(class='subscribe-form__header') Подпишись на рассылку
     input(type='email' placeholder='Email' class='input')
-    button(type='submit' class='button button__primary') Подписаться
+    button(type='submit' class='button button--primary') Подписаться
 </template>
 
 <style lang="scss">
-.form {
+.subscribe-form {
     height: 100px;
     display: flex;
     flex-direction: row;
@@ -15,7 +15,7 @@ form(class='form')
     color: var(--color-white);
     gap: 37px;
 
-    &_header {
+    &__header {
         font: var(--font-h3);
         flex-grow: 1;
     }
