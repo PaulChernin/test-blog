@@ -6,7 +6,8 @@ const blocks = {
     article_intro_block: resolveComponent('ArticleIntroBlock'),
     subscribe_form_block: resolveComponent('SubscribeForm'),
     image_block: resolveComponent('ImageBlock'),
-    article_list_block: resolveComponent('ArticleListBlock')
+    article_list_block: resolveComponent('ArticleListBlock'),
+    cta_form_block: resolveComponent('CtaForm')
 };
 
 const contentStore = useContentStore();
