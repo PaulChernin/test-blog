@@ -8,6 +8,7 @@ form(class='subscribe-form')
 <style lang="scss">
 .subscribe-form {
     height: 100px;
+    width: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;

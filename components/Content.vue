@@ -1,7 +1,9 @@
 <script setup>
 const blocks = {
     text_block: resolveComponent('TextBlock'),
-    article_intro_block: resolveComponent('ArticleIntroBlock')
+    article_intro_block: resolveComponent('ArticleIntroBlock'),
+    subscribe_form_block: resolveComponent('SubscribeForm'),
+    image_block: resolveComponent('ImageBlock')
 };
 
 const route = useRoute();
