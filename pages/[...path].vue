@@ -1,21 +1,20 @@
 <script setup>
-const blocks = {
-    text_block: resolveComponent('TextBlock'),
-    article_intro_block: resolveComponent('ArticleIntroBlock'),
-    subscribe_form_block: resolveComponent('SubscribeForm'),
-    image_block: resolveComponent('ImageBlock'),
-    article_list_block: resolveComponent('ArticleListBlock')
-};
+import { useContentStore } from '~/store/content';
 
 const route = useRoute();
 
-const { data } = await useFetch(`https://devtwit8.ru/api/v1/page/?path=${route.path}`);
+const contentStore = useContentStore();
+const { fetchContent } = contentStore;
+const { content } = storeToRefs(contentStore);
+
+await fetchContent(route.path);
+
 useHead({
-    title: data.value.meta.title
+    title: content.value.meta.title
 });
 
 useSeoMeta({
-    description: data.value.meta.description
+    description: content.value.meta.description
 });
 </script>
 
@@ -23,7 +22,7 @@ useSeoMeta({
 div(class='page')
     div(class='page__container')
         Header(class='page__header')
-        Content
+        Main
         Footer(class='page__footer')
 </template>
 

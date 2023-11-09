@@ -7,7 +7,7 @@ section(class='article-list')
     h2(class='article-list__header') {{ data.title }}
     ul(class='article-list__container')
         template(v-for='article in data.articles' :key='article.link')
-            ArticleListBlockItem(v-bind='article')
+            ArticleListBlockItem(v-bind='article' class='article-list__item')
 </template>
 
 <style lang="scss">
@@ -20,7 +20,13 @@ section(class='article-list')
     &__container {
         display: flex;
         flex-direction: row;
-        gap: 30px;
+        gap: 60px 30px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    &__item {
+        max-width: 30%;
     }
 }
 </style>

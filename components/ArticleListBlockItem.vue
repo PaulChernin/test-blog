@@ -3,15 +3,15 @@ defineProps(['image', 'link', 'title'])
 </script>
 
 <template lang="pug">
-li(class='article-list-item')
-    img(:src='image' class='article-list-item__image')
-    h3(class='article-list-item__title') {{ title }}
+li(class='article-preview')
+    img(:src='image' class='article-preview__image')
+    h3(class='article-preview__title') {{ title }}
     NuxtLink(:to='link' class='button') Читать
 </template>
 
 <style lang="scss">
-.article-list-item {
-    max-width: 427px;
+.article-preview {
+    min-width: 300px;
 
     &__image {
         width: 100%;
