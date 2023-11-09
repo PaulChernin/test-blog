@@ -1,6 +1,7 @@
 <template lang="pug">
 header(class='header')
-    img(src='/images/logo.svg' height='32' width='133')
+    NuxtLink(to='/')
+        img(src='/images/logo.svg' height='32' width='133')
 </template>
 
 <style scoped land="scss">
