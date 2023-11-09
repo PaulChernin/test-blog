@@ -23,10 +23,11 @@ main(class='content')
         component(:is='blocks[block.type]' :data='block.data')
 </template>
 
-<style>
+<style lang="scss">
 .content {
     display: flex;
     flex-direction: column;
+    align-items: center;    
     gap: 100px;
 }
 </style>
