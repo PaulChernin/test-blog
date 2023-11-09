@@ -1,9 +1,9 @@
 <script setup>
-const props = defineProps(['data']);
+defineProps(['data']);
 </script>
 
 <template lang="pug">
-section(v-html='props.data' class='text-block')
+section(v-html='data' class='text-block')
 </template>
 
 <style lang="scss">

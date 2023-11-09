@@ -1,5 +1,5 @@
 <script setup>
-const { data } = defineProps(['data']);
+defineProps(['data']);
 </script>
 
 <template lang="pug">
