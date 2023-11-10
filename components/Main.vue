@@ -17,7 +17,7 @@ const { content } = storeToRefs(contentStore);
 
 <template lang="pug">
 main(class='content')
-    template(v-for='block in content.body' :key='block.id')
+    template(v-for='block in content.body' :key='block')
         component(:is='blocks[block.type]' :data='block.data')
 </template>
 
