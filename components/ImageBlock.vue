@@ -13,6 +13,7 @@ section(class='image-block')
 .image-block {
     &__image {
         border-radius: 2px 220px 2px 2px;
+        max-width: 100%;
     }
 
     &__caption {

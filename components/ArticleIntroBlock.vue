@@ -23,14 +23,27 @@ section(class='article-intro')
     flex-direction: row;
     gap: 30px;
 
+    @media (max-width: 1100px) {
+        flex-direction: column;
+    }
+
     &__image {
         height: 100%;
-        width: 540px;
+        width: 40%;
         border-radius: 2px 220px 2px 2px;
+
+        @media (max-width: 1100px) {
+            max-height: 580px;
+            width: 100%;
+        }
     }
 
     &__container {
         margin-top: 90px;
+
+        @media (max-width: 1250px) {
+            margin-top: 30px;
+        }
     }
 
     &__header {

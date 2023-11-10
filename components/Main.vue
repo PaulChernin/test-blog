@@ -27,5 +27,9 @@ main(class='content')
     flex-direction: column;
     align-items: center;    
     gap: 100px;
+
+    @media (max-width: 800px) {
+        gap: 50px;
+    }
 }
 </style>

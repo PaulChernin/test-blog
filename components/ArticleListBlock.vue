@@ -26,7 +26,15 @@ section(class='article-list')
     }
 
     &__item {
-        max-width: 30%;
+        flex: 1 1 30%;
+
+        @media (max-width: 1100px) {
+            flex: 1 1 45%;
+        }
+
+        @media (max-width: 800px) {
+            flex: 1 1 100%;
+        }
     }
 }
 </style>

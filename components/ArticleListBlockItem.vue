@@ -11,8 +11,6 @@ li(class='article-preview')
 
 <style lang="scss">
 .article-preview {
-    min-width: 300px;
-
     &__image {
         width: 100%;
         height: 320px;

@@ -51,8 +51,8 @@ section(v-html='data' class='text-block')
     }
 
     & ul {
-        margin: 15px 0 20px;
-        padding-left: 115px;
+        width: fit-content;
+        margin: 15px auto 20px;
         list-style-type: none;
 
         & li {
@@ -63,6 +63,7 @@ section(v-html='data' class='text-block')
 
             &::before {
                 content: '';
+                flex-shrink: 0;
                 display: block;
                 width: 8px;
                 height: 8px;

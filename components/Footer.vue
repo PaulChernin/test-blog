@@ -1,10 +1,10 @@
 <template lang="pug">
 footer(class='footer')
     div(class='footer__main')
-        div(class='footer__info')
+        div
             img(src='/images/logo.svg' height='32' width='133')
             p(class='footer__text') Cтатьи о дизайне и искусстве, которые исследуют творческие вдохновения и актуальные тенденции, раскрывая мир эстетики и креативности
-        address
+        address(class='footer__contacts')
             div email
             div(class='footer__email') testblogsupport@gmail.com
             div(class='socials')
@@ -24,16 +24,25 @@ footer(class='footer')
 
     &__main {
         margin-bottom: 70px;
-        padding-right: 78px;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+
+        @media (max-width: 800px) {
+            flex-direction: column;
+            align-items: start;
+            gap: 30px;
+        }
     }
 
     &__text {
         margin-top: 20px;
-        width: 426px;
+        max-width: 426px;
+    }
+
+    &__contacts {
+        width: 312px;
     }
 
     &__email {

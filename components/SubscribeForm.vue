@@ -7,7 +7,6 @@ form(class='subscribe-form')
 
 <style lang="scss">
 .subscribe-form {
-    height: 100px;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -16,6 +15,11 @@ form(class='subscribe-form')
     background-color: var(--color-dark);
     color: var(--color-white);
     gap: 37px;
+
+    @media (max-width: 800px) {
+        flex-direction: column;
+        align-items: start;
+    }
 
     &__header {
         font: var(--font-h3);

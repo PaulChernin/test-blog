@@ -21,6 +21,11 @@ div(class='page')
     display: flex;
     flex-direction: row;
     justify-content: center;
+    padding: 0 50px;
+
+    @media (max-width: 500px) {
+        padding: 0 10px;
+    }
 
     &__container {
         max-width: 1340px;
